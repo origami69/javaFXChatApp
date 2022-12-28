@@ -1,0 +1,13 @@
+.text-area:focused .content {
+    -fx-background-color:  white;
+}
+.textarea {
+-fx-focus-color: transparent;
+-fx-border-style: none;
+-fx-background-radius: 0.0px;
+-fx-border-radius: 0.0px;
+}
+* {
+-fx-focus-color: transparent;
+-fx-border-style: none;
+}
