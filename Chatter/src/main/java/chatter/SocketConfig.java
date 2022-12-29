@@ -13,7 +13,7 @@ public class SocketConfig {
         config.setHostname(host);
         config.setPort(port);
         config.setKeyStorePassword("keystore password");
-        InputStream stream = SocketConfig.class.getResourceAsStream("keystore file path");
+        InputStream stream = SocketConfig.class.getResourceAsStream("keystore path");
         config.setKeyStore(stream);
         return new SocketIOServer(config);
     }

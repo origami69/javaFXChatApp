@@ -13,8 +13,8 @@ public class ChatFormat {
 	public String getMess() {
 		return this.mess;
 	}
-	public void setUser(String userName) {
-		this.user=userName;
+	public void setUser(String user) {
+		this.user=user;
 	}
 	public void setMess(String mess) {
 		this.mess=mess;
