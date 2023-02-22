@@ -85,7 +85,7 @@ public class MainApp {
 		options.callFactory = okHttpClient;
 		options.webSocketFactory = okHttpClient;
 		options.transports = new String[]{WebSocket.NAME};
-		URI uri = URI.create("ws://localhost:8081");
+		URI uri = URI.create("wss://localhost:8081");
 		mSocket = IO.socket(uri, options);
 		mSocket.on(Socket.EVENT_CONNECT, new Emitter.Listener() {  
 			@Override
