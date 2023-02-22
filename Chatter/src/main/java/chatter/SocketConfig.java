@@ -1,5 +1,6 @@
 package chatter;
 import com.corundumstudio.socketio.SocketIOServer;
+import java.io.File;
 import java.io.InputStream;
 
 
@@ -13,8 +14,8 @@ public class SocketConfig {
         config.setHostname(host);
         config.setPort(port);
         config.setKeyStorePassword("keystore password");
-        InputStream stream = SocketConfig.class.getResourceAsStream("keystore path");
-        config.setKeyStore(stream);
+        File file = new File("keyztore direc");
+        config.setKeyStore(new FileInputStream(file));
         return new SocketIOServer(config);
     }
 }
